@@ -6,7 +6,7 @@ body {
     @include sp {
         min-width: 100%;
         // font-size: 2rem;
-        // overflow: hidden;
+        overflow-x: hidden;
     }
 }
 

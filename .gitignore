@@ -1,0 +1,8 @@
+# css
+/httpdocs/*
+/node_modules/*
+## For Mac
+.DS_Store
+
+# Keep Files
+!.gitkeep
