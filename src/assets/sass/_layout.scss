@@ -1,0 +1,128 @@
+body {
+	min-width: 1200px;
+	line-height: 1.5;
+	margin: 0;
+    font-family: 'Arimo', sans-serif;
+    @include sp {
+        min-width: 100%;
+        // font-size: 2rem;
+        // overflow: hidden;
+    }
+}
+
+.l-main {
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+	@include cf;
+}
+.l-container {
+	margin: 0 auto;
+	width: 1200px;
+	text-align: left;
+    @include sp {
+        width: 90%;
+        // overflow: hidden;
+    }
+}
+.c-title1 {
+	width: 110px;
+    height: 25px;
+    margin-top: 10px;
+    background: #304153;
+    transform: skew(-30deg);
+    color: #cedae6;
+    text-align: center;
+    position: relative;
+    @include sp {
+        margin: 0 auto;
+        width: 150px;
+        height: 35px;
+    }
+    h2{
+    	transform: skew(30deg) ;
+    	padding-top: 5px;
+    	font-size: 1.4rem;
+    	font-weight: normal;
+        position: relative;
+        @include sp {
+            font-size: 2rem;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 80px;
+                height: 2px;
+                background-color: #25b0eb;
+                left: -100px;
+                top: 15px;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 80px;
+                height: 2px;
+                background-color: #25b0eb;
+                right: -100px;
+                top: 15px;
+            }
+        }
+    }
+    h3 {
+        background-color: #25b0eb;
+    }
+    // &:after{
+    // 	position: absolute;
+    // 	content: '';
+    // 	width: 510px;
+    // 	height: 2px;
+    // 	right: -576px;
+    // 	top: 13px;
+    // 	background-color: #25b0eb;
+    // }
+}
+.c-title2 {
+    // width: 15%;
+    width: 120px;
+    // @inclu
+    margin-top: 10px;
+    background: #25b0eb;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 5px 0;
+    @include sp {
+        margin: 0 auto;
+        margin-top: 10px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: #25b0eb;
+            left: -100px;
+            top: 15px;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: #25b0eb;
+            right: -100px;
+            top: 15px;
+        }
+    }
+    h3{
+        display: inline-block;
+    }
+
+}
+.c-title-bar{
+	width: 80%;
+	margin-top: 20px;
+	border-top: 2px solid #25b0eb;
+    @include sp {
+        display: none;
+    }
+}
