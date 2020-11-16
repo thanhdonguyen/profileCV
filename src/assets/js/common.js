@@ -72,6 +72,19 @@ $(function(){
         $('.scroll-top').fadeOut();
       }
     });
+     $('.nav-btn').click(function(){
+        if ($(this).hasClass('is-open')) {
+            $(this).removeClass('is-open');
+            $('.c-header__list').slideUp();
+        }else {
+            $(this).addClass('is-open');
+            $('.c-header__list').slideDown();
+        }
+    });
+    $('.c-header__list li a').click(function(){
+    	$('.nav-btn').removeClass('is-open');
+    	$('.c-header__list').slideUp();
+    })
 //     $('#changeLang').on('change', function(e){
 // 	var locals = localStorage.getItem("language");
 // 	if(locals){
